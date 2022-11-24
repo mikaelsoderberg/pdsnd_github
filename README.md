@@ -11,6 +11,9 @@ This project aims to practice the use of version control.
 
 ### Files used
 bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 Udacity 
