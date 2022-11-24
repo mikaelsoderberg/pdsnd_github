@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -19,13 +18,13 @@ def get_filters():
     # List of available city data
     city_option = ['chicago', 'new york city', 'washington']
 
-    city = str(input('Enter the city (Chicago, New York City or Washington): '))
+    city = str(input('Enter the city you want to investigate (Chicago, New York City or Washington): '))
 
     # Check if the input is in the list of cities
     while city.lower() not in city_option:
-        city = str(input('You must enter the correct city (Chicago, New York City or Washington): '))
+        city = str(input('Please enter one of the follwing cities: Chicago, New York City or Washington '))
     
-    print('OK, so you want to explore {}'.format(city.title()))
+    print('The city we will be investigating is: {}'.format(city.title()))
 
     filter_option = ['day', 'month', 'both', 'none']
     filter = str(input('\nWould you like to filter by day, month, both or not at all. Type "none" for not at all: '))
