@@ -21,7 +21,7 @@ def get_filters():
 
     city = str(input('Enter the city (Chicago, New York City or Washington): '))
 
-    # Check if the input is in the list
+    # Check if the input is in the list of cities
     while city.lower() not in city_option:
         city = str(input('You must enter the correct city (Chicago, New York City or Washington): '))
     
@@ -30,7 +30,7 @@ def get_filters():
     filter_option = ['day', 'month', 'both', 'none']
     filter = str(input('\nWould you like to filter by day, month, both or not at all. Type "none" for not at all: '))
 
-    # Check if the input is in the list
+    # Check if the input is in the list of filters
     while filter.lower() not in filter_option:
         filter = str(input('You must enter the correct filter: '))
 
