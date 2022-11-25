@@ -16,5 +16,5 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-Udacity 
-Google
+https://udacity.github.io/git-styleguide/
+
